@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" version="1.1" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffbf09;
+      }
+
+      .cls-2 {
+        fill: #f9ff0b;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="SVGRoot">
+      <g id="layer1">
+        <g id="path4206">
+          <circle class="cls-2" cx="128" cy="128" r="117"/>
+          <path class="cls-1" d="M128,255C58,255,1,198,1,128S58,1,128,1s127,57,127,127-57,127-127,127ZM128,21c-59,0-107,48-107,107s48,107,107,107,107-48,107-107S187,21,128,21Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
