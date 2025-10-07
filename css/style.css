@@ -1,10 +1,8 @@
-@config "../tailwind.config.js";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
 
 * {
   padding: 0;
@@ -21,7 +19,7 @@ header {
   width: 100%;
 }
 
-header::after {
+section.main::after {
   content: "";
   position: absolute;
   top: 0;
@@ -61,6 +59,7 @@ header::after {
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+
 @keyframes mulShdSpin {
   0%,
   100% {

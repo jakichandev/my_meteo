@@ -1,7 +1,6 @@
 const searchBox = document.querySelector("input.searchBox");
 const submitSearch = document.querySelector("button.submitSearch");
-const header = document.querySelector("header");
-console.log(header);
+const header = document.querySelector("section.main");
 
 const weatherBox = {
   loading: document.querySelector("div.loading-box"),
@@ -28,7 +27,6 @@ const positionWeather = () => {
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=2af05a035ace3fa63f8f71eebeeab844`
     );
     const responseData = await response.json();
-    console.log(responseData);
     weatherBox.loading.classList.add("invisible");
     chooseIconForWeather(responseData);
     weatherBox.city.textContent = responseData.name;
