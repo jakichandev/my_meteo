@@ -37,6 +37,7 @@ const positionWeather = () => {
 };
 
 positionWeather();
+searchBox.focus();
 
 const getCityWeather = async (place) => {
   weatherBox.loading.classList.remove("invisible");
@@ -87,7 +88,7 @@ const searchCity = async () => {
   } catch (error) {
     return {
       error: true,
-      message: "Località non trovata!",
+      message: "Not Found",
     };
   }
 };
@@ -128,10 +129,13 @@ const chooseIconForWeather = (data) => {
 };
 
 const srcIcon = (img) => {
+  weatherBox.icon.style = "width: 150px;";
   weatherBox.icon.src = `./assets/img/${img}`;
 };
 
 submitSearch.addEventListener("click", async () => {
   let place = await searchCity();
   getCityWeather(place);
+  searchBox.value = "";
+  searchBox.focus();
 });

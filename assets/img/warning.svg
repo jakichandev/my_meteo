@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="17" r="1" fill="#ff2d00"/>
-<path d="M12 10L12 14" stroke="#ff2d00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.44722 18.1056L10.2111 4.57771C10.9482 3.10361 13.0518 3.10362 13.7889 4.57771L20.5528 18.1056C21.2177 19.4354 20.2507 21 18.7639 21H5.23607C3.7493 21 2.78231 19.4354 3.44722 18.1056Z" stroke="#ff2d00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #940935;
+      }
+    </style>
+  </defs>
+  <circle class="st0" cx="400" cy="588.6" r="39.6"/>
+  <path class="st0" d="M400,509.4c-21.9,0-39.6-17.7-39.6-39.6v-158.3c0-21.9,17.7-39.6,39.6-39.6s39.6,17.7,39.6,39.6v158.3c0,21.9-17.7,39.6-39.6,39.6Z"/>
+  <path class="st0" d="M667.7,786.5H132.2c-41.5,0-79.2-21.1-101-56.3-21.8-35.3-23.7-78.5-5.2-115.5l35.4,17.7-35.4-17.7L293.8,79.1c20.2-40.5,60.9-65.6,106.2-65.6,45.3,0,86,25.2,106.2,65.6l267.8,535.5c18.5,37.1,16.6,80.3-5.2,115.5-21.8,35.3-59.6,56.3-101,56.3ZM400,92.7c-15.3,0-28.6,8.2-35.4,21.9L96.8,650c-8.9,17.8-1.8,32.9,1.7,38.5,3.5,5.6,13.8,18.8,33.7,18.8h535.5c19.9,0,30.2-13.1,33.7-18.8s10.6-20.7,1.7-38.5L435.4,114.5c-6.9-13.7-20.1-21.9-35.4-21.9Z"/>
 </svg>

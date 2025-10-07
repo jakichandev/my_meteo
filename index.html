@@ -7,17 +7,41 @@
     <link rel="stylesheet" href="./css/output.css" />
     <script src="https://unpkg.com/eva-icons"></script>
   </head>
-  <body class="bg-slate-200">
+  <body>
     <!--header-->
-    <header class="z-10 w-2/4 mx-auto">
+    <header
+      class="py-4 fixed bg-transparent top-0 left-1/2 -translate-x-1/2 z-10 w-full px-5 md:px-5"
+    >
       <!--Navbar-->
-      <nav class="flex justify-between items-center bg-white sm:bg-transparent">
-        <img src="./assets/img/logo.svg" alt="logo" width="175" height="auto" />
-        <button
-          class="border-2 border-green-900 py-1 px-3 rounded-md text-green-800 hover:bg-green-900 hover:text-slate-200"
-        >
-          Contattami
-        </button>
+      <nav
+        class="flex justify-between items-center w-full md:w-[60vw] border-1 rounded-full px-4 py-2 border-green-theme-light md:mx-auto bg-gradient-to-br from-green-theme-transparent via-white-transparent to-green-theme-transparent"
+      >
+        <img src="./assets/img/logo.svg" alt="logo" width="200" height="auto" />
+        <ul class="flex gap-1">
+          <li>
+            <a target="_blank" href="https://github.com/jakichandev/my_meteo">
+              <i
+                data-eva="github-outline"
+                data-eva-fill="#007a5c"
+                data-eva-width="30"
+                data-eva-height="30"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/jacopo-gianfaldoni-635096305/"
+            >
+              <i
+                data-eva="linkedin-outline"
+                data-eva-fill="#007a5c"
+                data-eva-width="30"
+                data-eva-height="30"
+              ></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!--End of Navbar-->
@@ -25,20 +49,22 @@
     <section
       class="main w-full relative h-[calc(100vh-10vh)] flex items-center justify-center"
     >
-      <div class="relative flex z-10 flex-col sm:flex-row">
+      <div class="relative flex z-10 flex-col lg:flex-row gap-8">
         <div
           class="headline-search-box flex flex-col gap-3 justify-center items-center w-[35vw]"
         >
-          <h3 class="headline-hero font-black text-5xl text-teal-950">search</h3>
+          <h3 class="headline-hero font-black text-5xl text-green-theme">
+            search
+          </h3>
           <div class="flex items-center gap-2">
             <input
-              class="searchBox py-2 rounded-md focus:border-none focus:outline-none"
+              class="searchBox py-2 rounded-md focus:border-none focus:outline-none text-red-theme"
               type="text"
               placeholder="search a locality"
             />
 
             <div class="buttons flex gap-1">
-              <button class="submitSearch bg-button-1 mx-6 p-2 rounded-sm">
+              <button class="submitSearch bg-button-1 p-2 rounded-sm">
                 <i
                   data-eva="search-outline"
                   data-eva-fill="#ffff"
@@ -64,7 +90,7 @@
         <!--Forecast Box-->
         <div class="w-[35vw] flex justify-center items-center">
           <div
-            class="forecast-box min-w-[350px] min-h-[450px] px-10 py-20 shadow-md relative text-rose-900 rounded-lg border-1 border-gray-100 p-5 box-border"
+            class="forecast-box min-w-[350px] min-h-[450px] p-3 shadow-md relative text-red-theme rounded-2xl border-1 border-green-theme-light box-border bg-gradient-to-br from-green-theme-transparent via-white-transparent to-green-theme-transparent"
           >
             <div
               class="loading-box absolute top-0 left-0 w-full h-full z-40 flex items-center justify-center rounded-md invisible"
@@ -81,26 +107,27 @@
               <!--Temperature icon and degrees-->
               <div class="icon-temp-box flex justify-center mt-10">
                 <img class="icon-temp my-10" width="200" height="auto" alt="" />
-                <span class="temp font-bold text-3xl text-emerald-900"></span>
+                <span class="temp font-bold text-3xl text-green-theme"></span>
               </div>
-              <p class="description font-bold text-2xl text-emerald-900"></p>
+              <p class="description font-bold text-2xl text-red-theme"></p>
               <!--Secondary info-->
-              <div class="secondary-info mt-5 text-emerald-900">
+              <div class="secondary-info mt-5 text-green-theme">
                 <ul id="box-secondary-info" class="hidden gap-2">
                   <li
-                    class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
+                    class="flex items-center p-2 border-1 rounded-xl border-green-theme"
                   >
                     <img
-                      class="text-green-900"
+                      class="text-green-theme"
                       src="./assets/img/humidity.svg"
+                      width="20"
                     />
                     <span class="humidity ml-1"></span>
                   </li>
                   <li
-                    class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
+                    class="flex items-center p-2 border-1 rounded-xl border-green-theme"
                   >
-                    <img src="./assets/img/wind.svg" alt="" />
-                    <span class="wind-speed ml-1"></span>=
+                    <img src="./assets/img/wind.svg" alt="" width="20" />
+                    <span class="wind-speed ml-1"></span>
                   </li>
                 </ul>
               </div>
@@ -113,28 +140,9 @@
     <!--End of header-->
 
     <footer
-      class="absolute left-0 bg-slate-50 p-10 w-full flex flex-col justify-around items-center gap-6"
+      class="absolute left-0 bg-green-theme-transparent text-red-theme font-md py-10 w-full flex flex-col justify-around items-center gap-6"
     >
-      <ul class="flex gap-4">
-        <li>
-          <i
-            data-eva="github-outline"
-            data-eva-fill="#000"
-            data-eva-width="30"
-            data-eva-height="30"
-          ></i>
-        </li>
-        <li>
-          <i
-            data-eva="linkedin-outline"
-            data-eva-fill="#000"
-            data-eva-width="30"
-            data-eva-height="30"
-          ></i>
-        </li>
-      </ul>
-
-      <hr class="border-1 border-neutral-400 w-3/4" />
+      <hr class="border-1 border-green-theme-light w-3/4" />
       <p class="text-center">
         © Jacopo Gianfaldoni
         <br />
