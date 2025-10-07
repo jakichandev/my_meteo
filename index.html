@@ -22,80 +22,88 @@
     </header>
     <!--End of Navbar-->
 
-    <section class="main w-full relative h-[calc(100vh-10vh)] flex items-center justify-center">
-      <div
-        class="flex gap-12 text-center z-10 flex-col sm:flex-row sm:text-left sm:p-0"
-      >
+    <section
+      class="main w-full relative h-[calc(100vh-10vh)] flex items-center justify-center"
+    >
+      <div class="relative flex z-10 flex-col sm:flex-row">
         <div
-          class="headline-search-box flex flex-col justify-center items-center"
+          class="headline-search-box flex flex-col gap-3 justify-center items-center w-[35vw]"
         >
-          <h3 class="headline-hero font-black text-teal-950">Il mio Meteo</h3>
-          <div class="flex gap-1 items-center mt-6 mx-auto w-full">
+          <h3 class="headline-hero font-black text-5xl text-teal-950">search</h3>
+          <div class="flex items-center gap-2">
             <input
-              class="searchBox px-4 py-2 rounded-md w-2/4"
+              class="searchBox py-2 rounded-md focus:border-none focus:outline-none"
               type="text"
-              placeholder="inserisci una città..."
+              placeholder="search a locality"
             />
-            <button class="submitSearch bg-rose-900 ml-3 p-2 rounded-sm">
-              <i
-                data-eva="search-outline"
-                data-eva-fill="#ffff"
-                data-eva-width="30"
-                data-eva-height="30"
-              ></i>
-            </button>
-            <button
-              onclick="positionWeather()"
-              class="submitPosition bg-emerald-900 ml-1 p-2 rounded-sm"
-            >
-              <i
-                data-eva="navigation-2-outline"
-                data-eva-fill="#fff"
-                data-eva-width="30"
-                data-eva-height="30"
-              ></i>
-            </button>
+
+            <div class="buttons flex gap-1">
+              <button class="submitSearch bg-button-1 mx-6 p-2 rounded-sm">
+                <i
+                  data-eva="search-outline"
+                  data-eva-fill="#ffff"
+                  data-eva-width="30"
+                  data-eva-height="30"
+                ></i>
+              </button>
+              <button
+                onclick="positionWeather()"
+                class="submitPosition bg-emerald-900 ml-1 p-2 rounded-sm"
+              >
+                <i
+                  data-eva="navigation-2-outline"
+                  data-eva-fill="#fff"
+                  data-eva-width="30"
+                  data-eva-height="30"
+                ></i>
+              </button>
+            </div>
           </div>
         </div>
 
         <!--Forecast Box-->
-        <div
-          class="forecast-box w-96 shadow-md relative text-rose-900 p-20 sm:p-10 rounded-md"
-        >
+        <div class="w-[35vw] flex justify-center items-center">
           <div
-            class="loading-box absolute top-0 left-0 w-full h-full z-40 flex items-center justify-center rounded-md invisible"
+            class="forecast-box min-w-[350px] min-h-[450px] px-10 py-20 shadow-md relative text-rose-900 rounded-lg border-1 border-gray-100 p-5 box-border"
           >
-            <span class="loader"></span>
-          </div>
+            <div
+              class="loading-box absolute top-0 left-0 w-full h-full z-40 flex items-center justify-center rounded-md invisible"
+            >
+              <span class="loader"></span>
+            </div>
 
-          <div class="wrapper-forecast-info relative z-20">
-            <!--City and Country-->
-            <div class="flex justify-between">
-              <h4 class="city text-3xl font-extrabold"></h4>
-              <span class="country text-sm"></span>
-            </div>
-            <!--Temperature icon and degrees-->
-            <div class="icon-temp-box flex justify-center mt-10">
-              <img class="icon-temp my-10" width="200" height="auto" alt="" />
-              <span class="temp font-bold text-3xl text-emerald-900"></span>
-            </div>
-            <p class="description font-bold text-2xl text-emerald-900"></p>
-            <!--Secondary info-->
-            <div class="secondary-info mt-5 text-emerald-900">
-              <ul id="box-secondary-info" class="hidden gap-2">
-                <li
-                  class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
-                >
-                  <img class="text-green-900" src="./assets/img/humidity.svg" />
-                  <span class="humidity ml-1"></span>
-                </li>
-                <li
-                  class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
-                >
-                  <img src="./assets/img/wind.svg" alt="" />
-                  <span class="wind-speed ml-1"></span>=
-                </li>
-              </ul>
+            <div class="wrapper-forecast-info relative z-20">
+              <!--City and Country-->
+              <div class="flex justify-between">
+                <h4 class="city text-3xl font-extrabold"></h4>
+                <span class="country text-sm"></span>
+              </div>
+              <!--Temperature icon and degrees-->
+              <div class="icon-temp-box flex justify-center mt-10">
+                <img class="icon-temp my-10" width="200" height="auto" alt="" />
+                <span class="temp font-bold text-3xl text-emerald-900"></span>
+              </div>
+              <p class="description font-bold text-2xl text-emerald-900"></p>
+              <!--Secondary info-->
+              <div class="secondary-info mt-5 text-emerald-900">
+                <ul id="box-secondary-info" class="hidden gap-2">
+                  <li
+                    class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
+                  >
+                    <img
+                      class="text-green-900"
+                      src="./assets/img/humidity.svg"
+                    />
+                    <span class="humidity ml-1"></span>
+                  </li>
+                  <li
+                    class="flex items-center p-2 border-2 rounded-sm border-emerald-900 bg-slate-100"
+                  >
+                    <img src="./assets/img/wind.svg" alt="" />
+                    <span class="wind-speed ml-1"></span>=
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
